@@ -1,27 +1,14 @@
 * { 
     scroll-behavior: smooth;
-background-color: #000; 
 box-sizing: border-box; 
 margin: 0; 
 padding: 0; 
 color: whitesmoke; 
-font-family: monospace, inter, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
 } 
 
-#navbar { 
-background-color: rebeccapurple; 
-display: flex; 
-height: 6vh; 
-justify-content: space-between; 
-align-items: center;
-padding-right: 20px;
-font-size: 0;
-} 
-
-#navbar a {
-    background-color: rebeccapurple;
-    font-size: 15px;
-    padding-left: 15px;
+body {
+    background-color: #000;
+    text-align: center;
 }
 
 a {
@@ -35,12 +22,12 @@ a {
 } 
 
 #hero { 
-text-align: center; 
-line-height: 1.8; 
-margin-top: 150px; 
+    line-height: 1.8; 
+    margin-top: 50px;
 } 
 
-#dragon { 
+h1 { 
+    font-family: monospace;
     position: relative; 
     padding: 5px 5px; 
     font-weight: 900; 
@@ -48,9 +35,11 @@ margin-top: 150px;
 } 
 
 #projects {
-    text-align: center;
-    background-color: #af0fff;
+    background-color: #000;
     height: 750px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.4em;
+    margin-bottom: 420px;
 }
 
 #grid {
@@ -70,9 +59,12 @@ margin-top: 150px;
     padding: 20px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    font-family: monospace;
+    font-size: 150%;
 }
 
 .project {
+    background-color: #0c0c0c;
     border-radius: 50px;
 }
 
@@ -84,6 +76,12 @@ margin-top: 150px;
     margin: auto;
     transform: translateY(20%);
 }
+
+h3 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
 
 #coffee {
     width: 100%;
@@ -120,6 +118,102 @@ margin-top: 150px;
     border-radius: 10%;
 }
 
+#intro {
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    margin: 100px 10%;
+    font-size: 25px;
+    line-height: 1.5;
+}
+
+#main {
+    font-family: verdana;
+    margin-top: 10%;
+    font-size: 22px;
+    margin-bottom: 180px;
+}
+
+.space {
+    margin-bottom: 45px;
+}
+
+#services {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 22px;
+    background: #0d3cbea9;
+    padding-bottom: 20px;
+    height: 100%;
+    padding-top: 30px;
+    width: 80%;
+    margin: 0 auto 80px auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px #1249e2ce;
+}
+
+#services p {
+    margin: 20px 10% 30px 10%;
+    font-size: 22px;
+}
+
+li {
+    list-style: none;
+    font-size: 30px;
+}
+
+h2 {
+    margin-bottom: 40px;
+}
+
+#about p {
+    margin: 20px 5%;
+    font-size: 20px;
+    font-family: inter;
+}
+
+#about {
+    margin-bottom: 100px;
+}
+
+h4 {
+    font-family: inter;
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+#process {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 70px;
+    background-color: rgba(99, 39, 196, 0.747);
+    padding: 20px;
+    width: 100%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+#process p {
+    font-size: 20px;
+}
+
+#process li {
+    margin: 30px auto;
+}
+
+#blank-gra {
+    background: linear-gradient(#af0fff, rgba(99, 39, 196, 0.747));
+}
+
+#email {
+    background-color: #0656b377;
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+    font-size: 20px;
+    position: sticky;
+    top: 0;
+    z-index: -1;
+}
+
 @media screen and (max-width: 880px) {
     body {
         overflow-x: hidden;
@@ -129,85 +223,4 @@ margin-top: 150px;
         grid-template-columns: 1fr 1fr;
         height: 1000px;
     }
-
-    #dragonImg {
-        transform: scale(0.8);
-        margin-right: auto;
-        margin-left: auto;
-    }
-    
-    #navbar {
-        height: 100px;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0;
-        font-size: 0;
-        padding-right: 30px;
-    }
-
-    #navbar a {
-        font-size: 13px;
-        padding: 6px 10px;
-    }
-}
-
-@media screen and (max-width: 700px) {
-    body {
-        overflow-x: hidden;
-    }
-
-    #grid {
-        grid-template-columns: 1fr 1fr;
-        height: 1000px;
-    }
-
-    #dragonImg {
-        transform: scale(0);
-        margin-top: -200px;
-    }
-    
-    #navbar {
-        height: 100px;
-        font-size: 0;
-        padding-right: 30px;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-    }
-
-    #navbar a {
-        font-size: 15px;
-        padding: 6px 10px;
-    }
-}
-
-@media screen and (max-width: 800px) {
-
-    #navbar {
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    height: 100%;
-    }
-
-    #nav-items {
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    width: 100%;
-    }
-
-    #nav-items a {
-    display: block;
-    width: 100%;
-    text-align: center;
-    padding: 10px 0;
-    background-color: rebeccapurple;
-    }
-
-    #dragonImg {
-        transform: scale(0);
-        margin-top: -200px;
-    }
-    
 }
