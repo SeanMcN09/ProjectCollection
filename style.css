@@ -28,11 +28,6 @@ a {
     color: #5ffff6
 }
 
-#steve { 
-    height: 50px; 
-    width: 80px; 
-} 
-
 #hero { 
 text-align: center; 
 line-height: 1.8; 
@@ -133,4 +128,5 @@ margin-top: 150px;
     }
 
 }
+
 
