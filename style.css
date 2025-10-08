@@ -11,7 +11,7 @@ font-family: monospace, inter, Impact, Haettenschweiler, 'Arial Narrow Bold', sa
 background-color: rebeccapurple; 
 display: flex; 
 height: 6vh; 
-justify-content: space-evenly; 
+justify-content: space-between; 
 align-items: center;
 padding-right: 20px;
 font-size: 0;
@@ -133,3 +133,4 @@ margin-top: 150px;
     }
 
 }
+
