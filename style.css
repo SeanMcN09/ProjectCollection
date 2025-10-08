@@ -36,10 +36,8 @@ h1 {
 
 #projects {
     background-color: #000;
-    height: 750px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1.4em;
-    margin-bottom: 420px;
 }
 
 #grid {
@@ -187,6 +185,7 @@ h4 {
     width: 100%;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+    padding-bottom: 60px;
 }
 
 #process p {
@@ -199,6 +198,8 @@ h4 {
 
 #blank-gra {
     background: linear-gradient(#af0fff, rgba(99, 39, 196, 0.747));
+    height: 100px;
+    padding: 100px;
 }
 
 #email {
@@ -211,7 +212,7 @@ h4 {
     font-size: 20px;
     position: sticky;
     top: 0;
-    z-index: -1;
+    z-index: 1;
 }
 
 @media screen and (max-width: 880px) {
