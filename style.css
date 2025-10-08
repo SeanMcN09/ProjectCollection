@@ -11,7 +11,7 @@ font-family: monospace, inter, Impact, Haettenschweiler, 'Arial Narrow Bold', sa
 background-color: rebeccapurple; 
 display: flex; 
 height: 6vh; 
-justify-content: space-between; 
+justify-content: space-evenly; 
 align-items: center;
 padding-right: 20px;
 font-size: 0;
@@ -131,4 +131,5 @@ margin-top: 150px;
     #dragonImg {
         transform: scale(0.9);
     }
+
 }
