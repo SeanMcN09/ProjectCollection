@@ -11,7 +11,7 @@ font-family: monospace, inter, Impact, Haettenschweiler, 'Arial Narrow Bold', sa
 background-color: rebeccapurple; 
 display: flex; 
 height: 6vh; 
-justify-content: space-evenly; 
+justify-content: space-between; 
 align-items: center;
 padding-right: 20px;
 font-size: 0;
@@ -27,6 +27,11 @@ a {
     text-decoration: none;
     color: #5ffff6
 }
+
+#steve { 
+    height: 50px; 
+    width: 80px; 
+} 
 
 #hero { 
 text-align: center; 
@@ -114,19 +119,33 @@ margin-top: 150px;
     border-radius: 10%;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 880px) {
     body {
         overflow-x: hidden;
     }
 
     #grid {
-        grid-template-columns: 1fr 1fr
+        grid-template-columns: 1fr 1fr;
+        height: 1000px;
     }
 
     #dragonImg {
-        transform: scale(0.9);
+        transform: scale(0.8);
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    #navbar {
+        height: 100px;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+        font-size: 0;
+        padding-right: 30px;
     }
 
+    #navbar a {
+        font-size: 13px;
+        padding: 6px 10px;
+    }
 }
-
-
