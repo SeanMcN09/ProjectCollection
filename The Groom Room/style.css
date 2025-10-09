@@ -38,6 +38,7 @@ body {
     font-size: 20px;
     padding-right: 40px;
     top: 0;
+    z-index: 1;
 }
 
 #logo {
@@ -174,7 +175,7 @@ body {
     align-items: center;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
 
     #accessories-grid {
     display: grid;
@@ -263,5 +264,16 @@ h3 {
 
     #navbar {
         font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+
+    #grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-item.image {
+        transform: scale(0.8);
     }
 }
