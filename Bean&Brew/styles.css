@@ -83,7 +83,7 @@ body {
     background: #F4EDE6;
     margin-top: 80px;
     text-align: center;
-    height: 500px;
+    padding-bottom: 40px;
 }
 
 #main-text {
@@ -275,4 +275,81 @@ body {
     align-items: center;
     justify-content: center;
     font-family: monospace;
+}
+
+/* --- Responsive Fixes --- */
+
+/* Tablets and smaller laptops */
+@media screen and (max-width: 900px) {
+
+    /* Make menu cards fit better */
+    #grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .card {
+        height: auto;
+        width: 90%;
+    }
+
+    .order-btn {
+        font-size: 16px;
+        padding: 8px;
+        width: 70%;
+    }
+
+    #visit {
+        margin-right: -100px;
+    }
+}
+
+/* Phones and small devices */
+@media screen and (max-width: 600px) {
+
+    /* Menu grid becomes single column */
+    #grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .card {
+        width: 85%;
+        height: auto;
+    }
+
+    /* Fix order buttons — keeps them inside cards */
+    .order-btn {
+        font-size: 15px;
+        padding: 8px;
+        width: 80%;
+        margin-bottom: 10px;
+    }
+
+    /* Fix Get Directions button and layout */
+    #container {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 20px;
+    }
+
+    #loco-btn {
+        display: inline-block;
+        margin: 0 auto;
+        font-size: 15px;
+        padding: 8px 15px;
+    }
+
+    #visit {
+        padding: 30px 20px;
+    }
+
+    #about {
+        padding-right: 20px;
+        margin-left: 20px;
+    }
+
+    /* Footer text smaller */
+    #footer {
+        font-size: 14px;
+    }
 }
