@@ -35,6 +35,7 @@ a {
     padding: 30px;
     font-weight: 900;
     background-color: var(--primary);
+    z-index: 1;
 }
 
 #nav-items {
@@ -58,22 +59,31 @@ a {
     position: sticky;
     top: 0;
     height: 8vh;
-    font-size: 16px;
+    font-size: 12px;
     font-family: inter;
     padding: 30px;
     font-weight: 900;
     background-color: var(--primary);
+    margin-bottom: 30px;
     }
 
     #navbtn {
     border-radius: 8px;
     background: var(--accent);
-    padding: 5px 12px;
-    font-size: 16px;
+    padding: 8px 5px;
+    font-size: 14px;
+    width: 100%;
+    text-align: center;
     }
 
     #logo {
         font-size: 20px;
+    }
+
+    #nav-items {
+        gap: 10px;
+        align-items: flex-start;
+        align-items: center;
     }
 }
 
@@ -115,6 +125,8 @@ a {
 
     #about {
         display: block;
+        font-size: 10px;
+        margin-top: 80px;
     }
 
     .aboutImg {
@@ -125,7 +137,7 @@ a {
 
     #hero {
         font-size: 16px;
-        margin: 15px;
+        margin: 0 15px;
     }
 }
 
