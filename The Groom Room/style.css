@@ -281,4 +281,11 @@ h3 {
     margin: -85px;
     }
 
+    .accessories-grid.text {
+        margin: 60px 0;
+    }
+
+    body {
+        overflow-x: hidden
+    }
 }
