@@ -214,10 +214,6 @@ h4 {
     z-index: 1;
 }
 
-#line {
-    margin: 0 10%;
-}
-
 @media screen and (max-width: 1000px) {
     body {
         overflow-x: hidden;
@@ -231,11 +227,6 @@ h4 {
 
     .project {
         transform: scale(0.95);
-    }
-
-    #line {
-        margin: 10px;
-        transform: scale(0.6);
     }
 }
 
@@ -253,9 +244,17 @@ h4 {
     .project {
         transform: scale(0.95);
     }
+}
 
-    #line {
-        margin: 10px;
-        transform: scale(0.5);
+    .short-text {
+        display: none;
+}
+
+    @media (max-width: 800px) {
+    .full-text {
+        display: none;
+    }
+    .short-text {
+        display: inline;
     }
 }
