@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Restaurant</title>
+</head>
+<body>
+    
+    <nav id="navbar">
+
+        <div id="logo">
+            LOGO
+        </div>
+
+        <div id="nav-items">
+            <a href="#home">HOME |</a>
+            <a href="#menu">MENU |</a>
+            <a href="#contact">RESERVATIONS </a>
+        </div>
+
+    </nav>
+
+    <div class="banner">
+        <img src="./images/restaraunt.jpg" alt="banner" id="banner">
+        <div class="banner-text">
+            <h1>restaurant</h1>
+        </div>
+    </div>
+
+    <section id="home">
+
+        <div id="menu-btn-container">
+            <a href="#menu" id="menu-btn">menu</a>
+        </div>
+
+        <div class="about-container">
+
+            <div class="about-text">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+            <div class="about-img">
+                <img src="./images/chef.jpg" alt="chef" id="chef">
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="featured">
+
+        <h2>Featured Dishes</h2>
+
+        <div class="dish-container">
+
+            <div class="card">
+                    <img src="./images/placeholder.jpg" alt="dish 1" class="featured">
+                    <P class="dish-name">Dish Name</P>
+                    <p class="dish-desc">description</p>
+            </div>
+            <div class="card">
+                    <img src="./images/placeholder.jpg" alt="dish 2" class="featured">
+                    <P class="dish-name">Dish Name</P>
+                    <p class="dish-desc">description</p>
+            </div>
+            <div class="card">
+                    <img src="./images/placeholder.jpg" alt="dish 3" class="featured">
+                    <P class="dish-name">Dish Name</P>
+                    <p class="dish-desc">description</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="menu">
+        <h2>MENU</h2>
+        <div id="starter-card">
+        <h3>Starters</h3>
+        <ul id="starters">
+            <li class="dish">Garlic Bread</li>
+            <li class="price">€4.50</li>
+            <li class="dish">Bruschetta</li>
+            <li class="price">€6.00</li>
+            <li class="dish">Caprese Salad</li>
+            <li class="price">€7.50</li>
+            <li class="dish">Soup of the Day</li>
+            <li class="price">€5.50</li>
+        </ul>
+        </div>
+
+        <div id="main-card">
+            <h3>Main Courses</h3>
+            <ul id="main">
+                <li class="dish">Spaghetti Carbonara</li>
+                <li class="price">€12.00</li>
+                <li class="dish">Grilled Salmon w/ Lemon Butter</li>
+                <li class="price">€16.50</li>
+                <li class="dish">Wood-Fired Pizza</li>
+                <li class="price">€11.00</li>
+                <li class="dish">Ribeye Steak (250g)</li>
+                <li class="price">€22.00</li>
+                <li class="dish">Vegetarian Risotto</li>
+                <li class="price">€13.50</li>
+            </ul>
+        </div>
+
+        <div id="dessert-card">
+            <h3>Desserts</h3>
+            <ul id="desserts">
+                <li class="dish">Tiramisu</li>
+                <li class="price">€6.50</li>
+                <li class="dish">Chocolate Lava Cake</li>
+                <li class="price">€7.00</li>
+                <li class="dish">Panna Cotta</li>
+                <li class="price">€6.00</li>
+                <li class="dish">Gelato Trio</li>
+                <li class="price">5.50</li>
+            </ul>
+        </div>
+
+        <div id="drink-card">
+            <h3>Drinks</h3>
+            <ul id="drinks">
+                <li class="dish">House Red Wine (Glass)</li>
+                <li class="price">€5.00</li>
+                <li class="dish">Craft Beer</li>
+                <li class="price">€4.50</li>
+                <li class="dish">Espresso</li>
+                <li class="price">€2.50</li>
+                <li class="dish">Cappuccino</li>
+                <li class="price">€3.00</li>
+                <li class="dish">Sparkling Water</li>
+                <li class="price">€2.00</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h1>Make a Reservation</h1>
+        <form>
+            <label for="name">Name *</label>
+            <input type="text" id="name" name="name" required placeholder="name">
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="email">
+
+            <label for="number">Number *</label>
+            <input type="tel" id="number" name="number" placeholder="phone number" required>
+            
+            <label for="date">Date *</label>
+            <input type="date" id="date" name="date" required>
+            
+            <label for="time">Time *</label>
+            <input type="time" id="time" name="time" required>
+            
+            <label for="guests">Number of Guests *</label>
+            <select id="guests" name="guests">
+                <option>1 Guest</option>
+                <option>2 Guests</option>
+                <option>3 Guests</option>
+                <option>4 Guests</option>
+                <option>5 Guests</option>
+                <option>6 Guests</option>
+                <option>7 Guests</option>
+                <option>8 Guests</option>
+            </select>
+            
+            <label for="requests">Special Requests</label>
+            <textarea id="requests" name="requests" placeholder="any special requests"></textarea>
+
+            <button type="submit">Book Now</button>
+        </form>
+    </section>
+
+    <section id="footer">
+        <div id="footer-contact">
+            <h5>Get in Contact</h5>
+            <p>123 Main Street, Narnia, Co.Clare</p>
+            <p>Phone: +353 123 456 789</p>
+            <p>Email: info@restaurant.ie</p>
+        </div>
+
+        <div id="footer-hours">
+            <h5>Opening Hours</h5>
+            <p>Mon-Fri: 12pm - 10pm</p>
+            <p>Sat - Sun: 1pm - 11pm</p>
+        </div>
+    </section>
+
+</body>
+</html>
